@@ -1,0 +1,25 @@
+.res {
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    align-content: space-between;
+}
+.wrapper {
+    width: 30px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+}
+.value {
+    background: green;
+    height: 50px;
+    position: relative;
+    top: 50px;
+}
+.commission {
+    background: red;
+    height: 10px;
+    position: relative;
+
+}
