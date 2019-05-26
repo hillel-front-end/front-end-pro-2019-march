@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 14</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div>Task 1</div>
+<blockquote>Реализовать калькулятор, в котором есть слайдер (`input type=”range”`) и поле ввода (`input type=”number”`).
+
+
+  Изменяя состояние range меняется состояние поля ввода `number`. И наоборот.
+
+
+  Реализовать блок-диаграмму, который в пикселях будет отображать значение range.
+
+  Например - range выбрали число 83, высота блока-диаграммы будет 83 пикселя.
+
+
+  ---------------------------
+
+  Красный блок - количество комиссии. Комиссия вычисляется по формуле:
+
+
+  (range < 20) -> 2%
+
+  (20 - 50) -> 4%
+
+  (50 - 75) -> 6%
+
+  (75 - 100) -> 8%
+
+
+  Красный блок отображает количество комиссии. Например Значение выбора 100, комиссия будет 8%. Результирующая сумма:
+  108. Высота красного блока - 8px
+</blockquote>
+<div class="res">
+  <div class="inputs">
+    <div>
+      <input type="number" value="0" min="0" max="100">
+    </div>
+    <div>
+      <input type="range" id="range" name="range"
+             min="0" max="100" value="50">
+      <label for="range">Range</label>
+    </div>
+  </div>
+  <div class="diagramma">
+    <div class="wrapper">
+      <div class="value">
+        <div class="commission"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
